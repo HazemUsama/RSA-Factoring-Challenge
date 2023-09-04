@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include <stdlib.h>
+#include<iostream>
 #include<gmp.h>
 
 #define ll unsigned long long
@@ -86,6 +85,9 @@ void rho(char *num, ll x0, ll c)
 	mpz_clear(y); mpz_clear(n); mpz_clear(sub);
 }
 int main (int argc, char **argv) {
+
+	std::ios_base::sync_with_stdio(false);
+	std::cin.tie(nullptr);
 
 	char *num = NULL;
 	FILE *file;
